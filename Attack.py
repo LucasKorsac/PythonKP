@@ -1,5 +1,6 @@
 #Attack.py - факторизация
 import math
+
 class Factorization:
     #n-разлогаемое число, iterat-ограничение итераций
     @staticmethod
@@ -25,3 +26,4 @@ class Factorization:
 
 
         return None         #Случай неудачи
+
