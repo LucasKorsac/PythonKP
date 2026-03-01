@@ -1,6 +1,5 @@
 #Attack.py - факторизация
 import math
-
 class Factorization:
     #n-разлогаемое число, iterat-ограничение итераций
     @staticmethod
@@ -23,5 +22,6 @@ class Factorization:
 
             a += 1                      #Увеличение a если не найдены множетели
             iterations += 1
+
 
         return None         #Случай неудачи
