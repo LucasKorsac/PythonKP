@@ -1,11 +1,8 @@
-#Graph - графическое представление
-# Построить графики зависимости времени взлома от
-# Размера ключа
-# Близости чисел p и q
-# Наличия/отсутствия требований к «сильным» простым числам
+#Графические представления
 
 import matplotlib.pyplot as plt
 import numpy as np
+from TimingAttack import TimingAttack
 
 def PlotRes(df):    #График зависимости среднего времени факторизации от размера ключа.
 
@@ -115,4 +112,3 @@ def PlotTimingAttack(res):
 
     plt.grid(True)
     plt.show()
-
