@@ -1,4 +1,4 @@
-#RSA.py - генерация ключей
+#Генерация ключей
 
 import random
 from Func import Generator
@@ -38,4 +38,5 @@ class RSA:
 
         # Закрытая экспонента
         self.d = pow(self.e, -1, phi)
+
 
