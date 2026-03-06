@@ -1,4 +1,4 @@
-# Interf.py - расширенный интерфейс RSA
+# Интерфейс
 
 import tkinter as tk
 from tkinter import ttk, messagebox
@@ -209,3 +209,4 @@ if __name__ == "__main__":
     root = tk.Tk()  #Создание основного окна
     app = Gui(root)     #Создание объекта интерфейса
     root.mainloop()     #Запуск обработки событий
+
