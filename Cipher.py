@@ -2,7 +2,7 @@
 import random
 
 def is_prime(num: int) -> bool:
-    """Проверка на простоту (достаточно для лабораторной)"""
+    """Проверка на простоту"""
     if num <= 1: return False
     if num <= 3: return True
     if num % 2 == 0 or num % 3 == 0: return False
@@ -90,3 +90,4 @@ class RSACrypto:
         if self.n == 0:
             raise ValueError("Ключи не сгенерированы")
         return ''.join(chr(pow(c, self.d, self.n)) for c in ciphertext)
+
