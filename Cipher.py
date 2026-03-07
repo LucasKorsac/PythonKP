@@ -4,7 +4,7 @@ import random
 #Проверка на простоту
 def is_prime(num: int) -> bool:
     if num <= 1: return False    # Числа <= 1 не простые
-    if num <= 3: return True     # Числа <= 1 не простые
+    if num <= 3: return True     # Числа <= 3 не простые
     if num % 2 == 0 or num % 3 == 0: return False       # Кратные 2 или 3 — составные
     i = 5
 
@@ -104,3 +104,4 @@ class RSACrypto:
         if self.n == 0:
             raise ValueError("Ключи не сгенерированы!")
         return ''.join(chr(pow(c, self.d, self.n)) for c in ciphertext)     # Для малых n можно сразу использовать chr()
+
