@@ -31,7 +31,7 @@ class Generator:
             x = pow(a, d, n)
 
             if x == 1 or x == n - 1:
-                continue
+                continue  # Этот раунд пройден
 
             for _ in range(r - 1):
                 x = pow(x, 2, n)

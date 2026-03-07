@@ -5,14 +5,8 @@ from app.Func import Generator
 
 
 class RSA:
-    """Класс для работы с RSA шифрованием"""
 
     def __init__(self, bit=1024, c=False, st=False):
-        """
-        bit - размер ключа в битах
-        c - использовать близкие простые числа (уязвимость)
-        st - использовать сильные простые числа
-        """
         # Генерация p и q
         if st:
             self.p = Generator.GenStrongPr(bit // 2)
@@ -29,7 +23,6 @@ class RSA:
                 self.q += 1
 
         # Валидация
-        assert Generator.MillerRabin(self.p), f"p не простое!"
         assert Generator.MillerRabin(self.q), f"q не простое!"
         assert self.p != self.q, "p и q совпадают!"
 
