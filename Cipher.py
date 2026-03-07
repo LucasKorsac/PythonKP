@@ -1,4 +1,4 @@
-# rsa_crypto.py — ОТДЕЛЬНЫЙ ФАЙЛ ДЛЯ ПУНКТА 4.2.6
+# Cipher.py - Шифрование RSA
 import random
 
 def is_prime(num: int) -> bool:
@@ -90,4 +90,5 @@ class RSACrypto:
         if self.n == 0:
             raise ValueError("Ключи не сгенерированы")
         return ''.join(chr(pow(c, self.d, self.n)) for c in ciphertext)
+
 
