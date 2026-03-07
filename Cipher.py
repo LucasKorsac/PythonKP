@@ -41,7 +41,7 @@ class RSACrypto:
         self.q = 0
 
     def generate_keys(self, key_size: int = 12):
-        """Автогенерация ключей (подходит для лабораторной)"""
+        """Автогенерация ключей"""
         self.p = self._generate_prime(key_size)
         self.q = self._generate_prime(key_size)
         while self.p == self.q:
@@ -90,5 +90,6 @@ class RSACrypto:
         if self.n == 0:
             raise ValueError("Ключи не сгенерированы")
         return ''.join(chr(pow(c, self.d, self.n)) for c in ciphertext)
+
 
 
